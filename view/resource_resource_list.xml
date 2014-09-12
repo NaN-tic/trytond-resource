@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<tree string="Resource">
+    <field name="name"/>
+    <field name="type"/>
+    <field name="employee"/>
+    <field name="calendar"/>
+    <field name="company"/>
+    <field name="active" tree_invisible="1"/>
+</tree>

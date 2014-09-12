@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<form string="Resource">
+    <label name="name"/>
+    <field name="name"/>
+    <label name="active"/>
+    <field name="active"/>
+    <label name="type"/>
+    <field name="type"/>
+    <label name="calendar"/>
+    <field name="calendar"/>
+    <label name="company"/>
+    <field name="company"/>
+    <label name="employee"/>
+    <field name="employee"/>
+    <field name="bookings" colspan="4"
+        view_ids="resource.resource_booking_view_list_sequence"/>
+</form>

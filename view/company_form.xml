@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/notebook/page[@id='work_time']" position="inside">
+        <label name="day_starts"/>
+        <field name="day_starts"/>
+        <label name="day_ends"/>
+        <field name="day_ends"/>
+    </xpath>
+</data>

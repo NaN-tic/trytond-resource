@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<tree string="Resource Book" sequence="sequence">
+    <field name="resource"/>
+    <field name="dtstart"/>
+    <field name="dtend"/>
+    <field name="hours"/>
+    <field name="state"/>
+</tree>

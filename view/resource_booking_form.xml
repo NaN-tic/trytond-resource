@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<form string="Resource Book" col="6">
+    <label name="calendar"/>
+    <field name="calendar"/>
+    <label name="summary"/>
+    <field name="summary"/>
+    <label name="resource"/>
+    <field name="resource"/>
+    <label name="dtstart"/>
+    <field name="dtstart"/>
+    <label name="dtend"/>
+    <field name="dtend"/>
+    <label name="hours"/>
+    <field name="hours"/>
+    <label name="sequence"/>
+    <field name="sequence"/>
+    <label name="document"/>
+    <field name="document"/>
+    <label name="timezone"/>
+    <field name="timezone"/>
+    <separator name="description" colspan="6"/>
+    <field name="description" colspan="6"/>
+    <group id="state_buttons" colspan="6" col="4">
+        <label name="state"/>
+        <field name="state"/>
+        <group id="buttons" colspan="2" col="3">
+            <button name="cancel" string="Cancel"/>
+            <button name="draft" string="Draft"/>
+            <button name="confirm" string="Confirm"/>
+        </group>
+    </group>
+</form>

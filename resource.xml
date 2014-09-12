@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+
+        <record model="res.group" id="group_resource_admin">
+            <field name="name">Resource Administration</field>
+        </record>
+        <record model="res.user-res.group" id="user_admin_group_resource_admin">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_resource_admin"/>
+        </record>
+        <record model="res.user-res.group" id="user_trigger_group_resource_admin">
+            <field name="user" ref="res.user_trigger"/>
+            <field name="group" ref="group_resource_admin"/>
+        </record>
+        <record model="res.group" id="group_resource">
+            <field name="name">Resource</field>
+        </record>
+        <record model="res.user-res.group" id="user_admin_group_resource">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_resource"/>
+        </record>
+        <record model="res.user-res.group" id="user_trigger_group_resource">
+            <field name="user" ref="res.user_trigger"/>
+            <field name="group" ref="group_resource"/>
+        </record>
+
+        <record model="ir.ui.view" id="company_view_form">
+            <field name="model">company.company</field>
+            <field name="type">form</field>
+            <field name="inherit" ref="company.company_view_form"/>
+            <field name="name">company_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="resource_booking_view_form">
+            <field name="model">resource.booking</field>
+            <field name="type">form</field>
+            <field name="name">resource_booking_form</field>
+        </record>
+        <record model="ir.ui.view" id="resource_booking_view_list">
+            <field name="model">resource.booking</field>
+            <field name="type">tree</field>
+            <field name="name">resource_booking_list</field>
+        </record>
+        <record model="ir.ui.view" id="resource_booking_view_list_sequence">
+            <field name="model">resource.booking</field>
+            <field name="type">tree</field>
+            <field name="name">resource_booking_list_sequence</field>
+        </record>
+        <record model="ir.action.act_window" id="act_resource_booking">
+            <field name="name">Resource Book</field>
+            <field name="res_model">resource.booking</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_resource_booking_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="resource_booking_view_list"/>
+            <field name="act_window" ref="act_resource_booking"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_resource_booking_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="resource_booking_view_form"/>
+            <field name="act_window" ref="act_resource_booking"/>
+        </record>
+        <record model="ir.model.access" id="access_resource_booking">
+            <field name="model" search="[('model', '=', 'resource.booking')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_resource_booking_admin">
+            <field name="model" search="[('model', '=', 'resource.booking')]"/>
+            <field name="group" ref="group_resource_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <record model="ir.ui.view" id="resource_configuration_view_form">
+            <field name="model">resource.configuration</field>
+            <field name="type">form</field>
+            <field name="name">resource_configuration_form</field>
+        </record>
+        <record model="ir.action.act_window" id="act_resource_configuration">
+            <field name="name">Resource Configuration</field>
+            <field name="res_model">resource.configuration</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_resource_configuration_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="resource_configuration_view_form"/>
+            <field name="act_window" ref="act_resource_configuration"/>
+        </record>
+        <record model="ir.model.access" id="access_resource_configuration">
+            <field name="model" search="[('model', '=', 'resource.configuration')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_resource_configuration_admin">
+            <field name="model" search="[('model', '=', 'resource.configuration')]"/>
+            <field name="group" ref="group_resource_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <record model="ir.ui.view" id="resource_resource_view_form">
+            <field name="model">resource.resource</field>
+            <field name="type">form</field>
+            <field name="name">resource_resource_form</field>
+        </record>
+        <record model="ir.ui.view" id="resource_resource_view_list">
+            <field name="model">resource.resource</field>
+            <field name="type">tree</field>
+            <field name="name">resource_resource_list</field>
+        </record>
+        <record model="ir.action.act_window" id="act_resource_resource">
+            <field name="name">Resource</field>
+            <field name="res_model">resource.resource</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_resource_resource_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="resource_resource_view_list"/>
+            <field name="act_window" ref="act_resource_resource"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_resource_resource_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="resource_resource_view_form"/>
+            <field name="act_window" ref="act_resource_resource"/>
+        </record>
+        <record model="ir.model.access" id="access_resource_resource">
+            <field name="model" search="[('model', '=', 'resource.resource')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_resource_resource_group">
+            <field name="model" search="[('model', '=', 'resource.resource')]"/>
+            <field name="group" ref="group_resource"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <record model="ir.model.access" id="access_resource_resource_admin">
+            <field name="model" search="[('model', '=', 'resource.resource')]"/>
+            <field name="group" ref="group_resource_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+
+           <record model="ir.rule.group" id="rule_group_resource_resource">
+            <field name="model" search="[('model', '=', 'resource.resource')]"/>
+            <field name="global_p" eval="True"/>
+          </record>
+
+          <record model="ir.rule" id="rule_resource_resource1">
+            <field name="domain">[('company', '=', user.company.id if user.company else None)]</field>
+            <field name="rule_group" ref="rule_group_resource_resource"/>
+          </record>
+
+        <!-- Menus -->
+        <menuitem id="menu_resource" name="Resource" sequence="1" />
+
+          <record model="ir.ui.menu-res.group" id="menu_resource_group_resource">
+            <field name="menu" ref="menu_resource"/>
+            <field name="group" ref="group_resource"/>
+          </record>
+
+        <menuitem id="menu_configuration" name="Configuration" sequence="1" parent="menu_resource" />
+
+          <record model="ir.ui.menu-res.group" id="menu_resource_group_resource_admin">
+            <field name="menu" ref="menu_configuration"/>
+            <field name="group" ref="group_resource_admin"/>
+          </record>
+        <menuitem action="act_resource_configuration" id="menu_resource_configuration" parent="menu_configuration" sequence="1"/>
+
+        <menuitem action="act_resource_resource" id="menu_resource_resource"
+            parent="menu_resource" sequence="10"/>
+        <menuitem action="act_resource_booking" id="menu_resource_booking"
+            parent="menu_resource" sequence="20"/>
+    </data>
+</tryton>

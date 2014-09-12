@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<tree string="Resource Book">
+    <field name="resource"/>
+    <field name="calendar"/>
+    <field name="dtstart"/>
+    <field name="dtend"/>
+    <field name="hours"/>
+    <field name="state"/>
+    <button name="cancel" string="Cancel" tree_invisible="1"/>
+    <button name="draft" string="Draft" tree_invisible="1"/>
+    <button name="confirm" string="Confirm" tree_invisible="1"/>
+</tree>

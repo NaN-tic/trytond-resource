@@ -1,0 +1,431 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:resource.booking:"
+msgid "Booking \"%s\" must be cancelled before deletion."
+msgstr "La resreva \"%s\" debe ser cancelada antes de ser eliminada.\""
+
+msgctxt "error:resource.booking:"
+msgid "Recurrence \"%s\" can not be recurrent."
+msgstr "La recurrencia \"%s\" no puede ser recurrente."
+
+msgctxt "error:resource.booking:"
+msgid "UUID and recurrence must be unique in a calendar."
+msgstr "UUID y la recurrencia deber ser únicos en el calendario."
+
+msgctxt "field:company.company,day_ends:"
+msgid "Day Ends"
+msgstr "Hora fin día laboral"
+
+msgctxt "field:company.company,day_starts:"
+msgid "Day Start"
+msgstr "Hora inicio día laboral"
+
+msgctxt "field:resource.booking,alarms:"
+msgid "Alarms"
+msgstr "Alarmas"
+
+msgctxt "field:resource.booking,all_day:"
+msgid "All Day"
+msgstr "Todo el día"
+
+msgctxt "field:resource.booking,attendees:"
+msgid "Attendees"
+msgstr "Asistentes"
+
+msgctxt "field:resource.booking,calendar:"
+msgid "Calendar"
+msgstr "Calendarios"
+
+msgctxt "field:resource.booking,calendar_owner:"
+msgid "Owner"
+msgstr "Titular"
+
+msgctxt "field:resource.booking,calendar_read_users:"
+msgid "Read Users"
+msgstr "Usuarios lectura"
+
+msgctxt "field:resource.booking,calendar_write_users:"
+msgid "Write Users"
+msgstr "Usuarios modificación"
+
+msgctxt "field:resource.booking,categories:"
+msgid "Categories"
+msgstr "Categorías"
+
+msgctxt "field:resource.booking,classification:"
+msgid "Classification"
+msgstr "Clasificación"
+
+msgctxt "field:resource.booking,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:resource.booking,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:resource.booking,description:"
+msgid "Description"
+msgstr "Descripción"
+
+msgctxt "field:resource.booking,document:"
+msgid "Document"
+msgstr "Documento"
+
+msgctxt "field:resource.booking,dtend:"
+msgid "End Date"
+msgstr "Fecha finalización"
+
+msgctxt "field:resource.booking,dtstart:"
+msgid "Start Date"
+msgstr "Fecha inicial"
+
+msgctxt "field:resource.booking,exdates:"
+msgid "Exception Dates"
+msgstr "Fechas excluidas"
+
+msgctxt "field:resource.booking,exrules:"
+msgid "Exception Rules"
+msgstr "Reglas de excepción"
+
+msgctxt "field:resource.booking,hours:"
+msgid "Hours"
+msgstr "Horas"
+
+msgctxt "field:resource.booking,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:resource.booking,location:"
+msgid "Location"
+msgstr "Ubicación"
+
+msgctxt "field:resource.booking,occurences:"
+msgid "Occurences"
+msgstr "Ocurrencias"
+
+msgctxt "field:resource.booking,organizer:"
+msgid "Organizer"
+msgstr "Organizador"
+
+msgctxt "field:resource.booking,parent:"
+msgid "Parent"
+msgstr "Padre"
+
+msgctxt "field:resource.booking,rdates:"
+msgid "Recurrence Dates"
+msgstr "Fechas de recurrencia"
+
+msgctxt "field:resource.booking,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:resource.booking,recurrence:"
+msgid "Recurrence"
+msgstr "Recurrencia"
+
+msgctxt "field:resource.booking,resource:"
+msgid "Resource"
+msgstr "Recurso"
+
+msgctxt "field:resource.booking,rrules:"
+msgid "Recurrence Rules"
+msgstr "Reglas de recurrencia"
+
+msgctxt "field:resource.booking,sequence:"
+msgid "Sequence"
+msgstr "Secuencia"
+
+msgctxt "field:resource.booking,state:"
+msgid "State"
+msgstr "Estado"
+
+msgctxt "field:resource.booking,status:"
+msgid "Status"
+msgstr "Estado"
+
+msgctxt "field:resource.booking,summary:"
+msgid "Summary"
+msgstr "Resumen"
+
+msgctxt "field:resource.booking,timezone:"
+msgid "Timezone"
+msgstr "Zona horaria"
+
+msgctxt "field:resource.booking,transp:"
+msgid "Time Transparency"
+msgstr "Tiempo de transparencia"
+
+msgctxt "field:resource.booking,uuid:"
+msgid "UUID"
+msgstr "UUID"
+
+msgctxt "field:resource.booking,vevent:"
+msgid "vevent"
+msgstr "vevent"
+
+msgctxt "field:resource.booking,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:resource.booking,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:resource.configuration,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:resource.configuration,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:resource.configuration,documents:"
+msgid "Documents"
+msgstr "Documentos"
+
+msgctxt "field:resource.configuration,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:resource.configuration,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:resource.configuration,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:resource.configuration,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:resource.configuration-ir.model,configuration:"
+msgid "Configuration"
+msgstr "Configuración"
+
+msgctxt "field:resource.configuration-ir.model,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:resource.configuration-ir.model,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:resource.configuration-ir.model,document:"
+msgid "Document"
+msgstr "Documento"
+
+msgctxt "field:resource.configuration-ir.model,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:resource.configuration-ir.model,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:resource.configuration-ir.model,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:resource.configuration-ir.model,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:resource.resource,active:"
+msgid "Active"
+msgstr "Activo"
+
+msgctxt "field:resource.resource,bookings:"
+msgid "Bookings"
+msgstr "Reservas"
+
+msgctxt "field:resource.resource,calendar:"
+msgid "Calendar"
+msgstr "Calendarios"
+
+msgctxt "field:resource.resource,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:resource.resource,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:resource.resource,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:resource.resource,employee:"
+msgid "Employee"
+msgstr "Empleado"
+
+msgctxt "field:resource.resource,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:resource.resource,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:resource.resource,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:resource.resource,type:"
+msgid "Type"
+msgstr "Tipo"
+
+msgctxt "field:resource.resource,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:resource.resource,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "help:company.company,day_ends:"
+msgid "The hour on which the working day ends."
+msgstr "La hora en que finaliza el horario laboral."
+
+msgctxt "help:company.company,day_starts:"
+msgid "The hour on which the working day starts."
+msgstr "La hora en que empieza el horario laboral."
+
+msgctxt "help:resource.booking,uuid:"
+msgid "Universally Unique Identifier"
+msgstr "Identificador universal único."
+
+msgctxt "model:ir.action,name:act_resource_booking"
+msgid "Resource Book"
+msgstr "Reserva de recurso"
+
+msgctxt "model:ir.action,name:act_resource_configuration"
+msgid "Resource Configuration"
+msgstr "Configuración de recursos"
+
+msgctxt "model:ir.action,name:act_resource_resource"
+msgid "Resource"
+msgstr "Recurso"
+
+msgctxt "model:ir.ui.menu,name:menu_configuration"
+msgid "Configuration"
+msgstr "Configuración"
+
+msgctxt "model:ir.ui.menu,name:menu_resource"
+msgid "Resource"
+msgstr "Recurso"
+
+msgctxt "model:ir.ui.menu,name:menu_resource_booking"
+msgid "Resource Book"
+msgstr "Reserva de recurso"
+
+msgctxt "model:ir.ui.menu,name:menu_resource_configuration"
+msgid "Resource Configuration"
+msgstr "Configuración de recursos"
+
+msgctxt "model:ir.ui.menu,name:menu_resource_resource"
+msgid "Resource"
+msgstr "Recurso"
+
+msgctxt "model:res.group,name:group_resource"
+msgid "Resource"
+msgstr "Recurso"
+
+msgctxt "model:res.group,name:group_resource_admin"
+msgid "Resource Administration"
+msgstr "Administración de recursos"
+
+msgctxt "model:resource.booking,name:"
+msgid "Resource Book"
+msgstr "Reserva de recurso"
+
+msgctxt "model:resource.configuration,name:"
+msgid "Resource Configuration"
+msgstr "Configuración de recursos"
+
+msgctxt "model:resource.configuration-ir.model,name:"
+msgid "ResourceConfig - Ir Model"
+msgstr "Configuración de recursos - IR Model"
+
+msgctxt "model:resource.resource,name:"
+msgid "Resource"
+msgstr "Recurso"
+
+msgctxt "selection:resource.booking,classification:"
+msgid "Confidential"
+msgstr "Confidencial"
+
+msgctxt "selection:resource.booking,classification:"
+msgid "Private"
+msgstr "Privado"
+
+msgctxt "selection:resource.booking,classification:"
+msgid "Public"
+msgstr "Público"
+
+msgctxt "selection:resource.booking,state:"
+msgid "Canceled"
+msgstr "Cancelado"
+
+msgctxt "selection:resource.booking,state:"
+msgid "Confirmed"
+msgstr "Confirmado"
+
+msgctxt "selection:resource.booking,state:"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "selection:resource.booking,status:"
+msgid ""
+msgstr ""
+
+msgctxt "selection:resource.booking,status:"
+msgid "Cancelled"
+msgstr "Cancelado"
+
+msgctxt "selection:resource.booking,status:"
+msgid "Confirmed"
+msgstr "Confirmado"
+
+msgctxt "selection:resource.booking,status:"
+msgid "Tentative"
+msgstr "Tentativo"
+
+msgctxt "selection:resource.booking,transp:"
+msgid "Opaque"
+msgstr "Opaco"
+
+msgctxt "selection:resource.booking,transp:"
+msgid "Transparent"
+msgstr "Transparente"
+
+msgctxt "selection:resource.resource,type:"
+msgid "Human"
+msgstr "Humano"
+
+msgctxt "view:resource.booking:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "view:resource.booking:"
+msgid "Confirm"
+msgstr "Confirmar"
+
+msgctxt "view:resource.booking:"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "view:resource.booking:"
+msgid "Resource Book"
+msgstr "Reserva de recurso"
+
+msgctxt "view:resource.configuration:"
+msgid "Resource Configuration"
+msgstr "Configuración de recursos"
+
+msgctxt "view:resource.resource:"
+msgid "Resource"
+msgstr "Recurso"
