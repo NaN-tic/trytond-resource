@@ -169,9 +169,15 @@ class Resource(ModelSQL, ModelView):
             busy_interval = busy[bdate]
             timetable, free = self.timetable(bdate, busy_interval)
             res[bdate] = free
-        return res
+        #Only return the dates that have free time
+        result = res.copy()
+        for k, v in res.iteritems():
+            if not v:
+                del result[k]
+        return result
 
-    def default_ahead(self):
+    @staticmethod
+    def default_ahead():
         return relativedelta(days=7)
 
     def book_hours(self, date, hours, ahead=None, min_hours=None):
@@ -229,11 +235,24 @@ class Resource(ModelSQL, ModelView):
             create_bookings.append(i)
         return Event.create(create_bookings)
 
-    def get_bookings(self, start, end):
-        pass
-
-    def load(self, start, end):
-        pass
+    @classmethod
+    def get_free_resource(cls, date, hours, domain=None):
+        '''
+        Finds free resourece for the given date and the given number of hours.
+        The domain param allows to restric the possible resources to search.
+        '''
+        if domain is None:
+            domain = []
+        start_per_resource = []
+        for resource in cls.search(domain):
+            free_times = resource.find_free_time(date,
+                date + cls.default_ahead(), hours)
+            if free_times:
+                min_date = min(free_times.keys())
+                start_per_resource.append((free_times[min_date][0], resource))
+        if not start_per_resource:
+            return None
+        return min(start_per_resource, key=lambda a: a[0])[1]
 
 
 class ResourceBooking(Workflow, Event):
