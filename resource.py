@@ -178,7 +178,7 @@ class Resource(ModelSQL, ModelView):
 
     @staticmethod
     def default_ahead():
-        return relativedelta(days=7)
+        return relativedelta(days=90)
 
     def book_hours(self, date, hours, ahead=None, min_hours=None):
         ahead_search = ahead or self.default_ahead()
@@ -346,7 +346,7 @@ class ResourceBooking(Workflow, Event):
     @classmethod
     def delete(cls, bookings):
         for book in bookings:
-            if book.state != 'canceled':
+            if book.state not in ('canceled', 'draft'):
                 cls.raise_user_error('delete_cancel', (book.rec_name,))
         super(ResourceBooking, cls).delete(bookings)
 
